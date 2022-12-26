@@ -17,6 +17,22 @@ namespace BulkBook.DataAccess.Repository.IRepository
         IApplicationUserRepository ApplicationUser { get; }
         IOrderDetailRepository OrderDetail { get; }
         IOrderHeaderRepository OrderHeader { get; }
+
+
+        IAdCategoriesRepository AdCategories { get; }
+        IAddressRepository Adress { get; }
+        IAdsRepository Ads { get; } 
+        ICategoriesRepository Categories { get; }
+        ICitiesRepository Cities { get; }
+        IDeadlineRepository Deadline { get; } 
+        IDistrictRepository District { get; }
+        IUserRepository User { get; }
+
+
+
+
+
+
         void Save();
     }
 }
