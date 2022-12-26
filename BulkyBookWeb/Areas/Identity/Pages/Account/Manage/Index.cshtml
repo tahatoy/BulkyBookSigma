@@ -1,4 +1,4 @@
-﻿@page
+﻿@*@page
 @model IndexModel
 @{
     ViewData["Title"] = "Profile";
@@ -28,3 +28,114 @@
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
+*@
+
+@page
+
+
+
+
+
+@model IndexModel
+@{
+    ViewData["Title"] = "Profile";
+    ViewData["ActivePage"] = ManageNavPages.Index;
+}
+
+
+<link href="~/css/profile.css" rel="stylesheet" type="text/css" />
+<div class="container">
+    <div class="leftbox">
+        <nav>
+            <a-profile id="profile" class="active"><i class="bi bi-person-circle"></i></a-profile>
+            <a-profile id="payment"><i class="bi bi-credit-card"></i></a-profile>
+            <a-profile id="subscription"><i class="bi bi-tv"></i></a-profile>
+            <a-profile id="privacy"><i class="bi bi-list"></i></a-profile>
+            <a-profile id="settings"><i class="bi bi-gear"></i></a-profile>
+        </nav>
+    </div>
+
+
+    <div class="rightbox">
+
+        <div class="profile">
+            <h1>Personal Info</h1>
+            <h2>Full Name</h2>
+            <p><input type="text" placeholder="İSİM"> <button class="btn-profile">update</button></p>
+            <h2>Birthday</h2>
+            <p>July 21</p>
+            <h2>Email</h2>
+            <p><input type="text" placeholder="Email"> <button class="btn-profile">update</button></p>
+            <h2>Password </h2>
+            <p>••••••• <button class="btn-profile">Change</button></p>
+        </div>
+
+        <div class="payment noshow">
+            <h1>Payment Info</h1>
+            <h2>Payment Method</h2>
+            <p>Mastercard •••• •••• •••• 0000 <button class="btn-profile">update</button></p>
+            <h2>Billing Address</h2>
+            <p>1234 Example Ave | Seattle, WA <button class="btn-profile">change</button></p>
+            <h2>Zipcode</h2>
+            <p>999000</p>
+            <h2>Billing History</h2>
+            <p>2018<button class="btn-profile">view</button></p>
+            <h2>Redeem Gift Subscription </h2>
+            <p><input type="text" placeholder="Enter Gift Code"></input> <button class="btn-profile">Redeem</button></p>
+        </div>
+
+        <div class="subscription noshow">
+            <h1>Your Subscription</h1>
+            <h2>Payment Date</h2>
+            <p>05-15-2018 <button class="btn-profile">pay now</button></p>
+            <h2>Your Next Charge</h2>
+            <p>$8.48<span> includes tax</span></p>
+            <h2>Hulu Base Plan</h2>
+            <p>Limited Commercials <button class="btn-profile">change plan</button></p>
+            <h2>Add-ons</h2>
+            <p>None <button class="btn-profile">manage</button></p>
+            <h2>Monthly Recurring Total </h2>
+            <p>$7.99/month</p>
+        </div>
+
+        <div class="privacy noshow">
+            <h1>Privacy Settings</h1>
+            <h2>Manage Email Notifications<button class="btn-profile">manage</button></h2>
+            <p></p>
+            <h2>Manage Privacy Settings<button class="btn-profile">manage</button></h2>
+            <p></p>
+            <h2>View Terms of Use <button class="btn-profile">view</button></h2>
+            <p></p>
+            <h2>Personalize Ad Experience <button class="btn-profile">update</button></h2>
+            <p></p>
+            <h2>Protect Your Account <button class="btn-profile">protect</button></h2>
+            <p></p>
+        </div>
+        <div class="settings noshow">
+            <h1>Account Settings</h1>
+            <h2>Sync Watchlist to My Stuff<button class="btn-profile">sync</button></h2>
+            <p></p>
+            <h2>Hold Your Subscription<button class="btn-profile">hold</button></h2>
+            <p></p>
+            <h2>Cancel Your Subscription <button class="btn-profile">cancel</button></h2>
+            <p></p>
+            <h2>Your Devices <button class="btn-profile">Manage Devices</button></h2>
+            <p></p>
+            <h2>Referrals <button class="btn-profile">get $10</button></h2>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+@section Scripts {
+
+    <partial name="_ValidationScriptsPartial"   />
+
+}
+
+
+
+

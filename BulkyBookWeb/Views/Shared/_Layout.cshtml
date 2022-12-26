@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"/>
-    <link rel="stylesheet" href="/BulkBookWeb.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/css/profile.css" />
     <link rel="stylesheet" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" />
     <script src="https://cdn.tiny.cloud/1/oqc7f4x5dhc4pdjpw3kzzt8jt5llabar6g2hwnn1d881vgxs/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 </head>
@@ -21,7 +21,7 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-                <a class="nav-link " style="color:aliceblue" asp-area="Customer" asp-controller="Home" asp-action="Index">Bully Book</a>
+                <a class="nav-link " style="color:aliceblue" asp-area="Customer" asp-controller="Home" asp-action="Index">Hammal</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -65,7 +65,7 @@
 
 
 </header>
-<div class="container">
+<div class="container-fluid">
     <main role="main" class="pb-3">
         <partial name="_Notification"/>
         @RenderBody()
