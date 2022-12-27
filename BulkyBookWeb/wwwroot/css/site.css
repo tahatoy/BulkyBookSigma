@@ -14,5 +14,29 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(80,9,121,1) 43%, rgba(0,212,255,1) 100%);
+}
+th{
+    color:white;
+}
+td{
+    color:white;
+    background-color:red;
+}
+
+label{
+    color:white;
+}
+select{
+    color:white;
+}
+#tblData_info{
+    color:white;    
+}
+#tblData_wrapper{
+    background-color:black;
+    opacity:60%;
+    border-radius:15px;
 }
