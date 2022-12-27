@@ -4,7 +4,7 @@ body {
     background: linear-gradient(to right top, #e0a977, #e3c195, #e8d7b6, #f1ecda);
 }
 
-.container {
+.container-profile {
     background: #fff;
     width: 540px;
     height: 420px;
@@ -133,5 +133,5 @@ input {
 }
 
 .noshow {
-      z-index:  -1;
+    z-index: -1;
 }
