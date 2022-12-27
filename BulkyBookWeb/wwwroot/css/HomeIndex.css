@@ -43,7 +43,7 @@ main {
     position: relative;
     color: rgba(175, 103, 36, 0.764);
 }
-
+    
 .card:after {
     content: '';
     position: absolute;
